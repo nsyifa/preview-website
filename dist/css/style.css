@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+#header{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#header .container{
+    padding: 10px 10% 10px 5%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav h1{
+    font-size: 25px;
+    text-align: left;
+    margin: 10px 0;
+    text-decoration:underline;
+    text-decoration-color: #59ca73;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+nav h1 span{
+    color:#59ca73;
+}
+nav ul li{
+    display: inline-block;
+    align-items: flex-end;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #59ca73;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.5s;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    background:#59ca73;
+    position: absolute;
+    left: -5;
+    bottom: -2.5;
+    z-index:-1;
+    border-radius:3px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+    padding:3px 5px 3px 5px;
+}
+nav ul li a:hover{
+    color:#ffffff;
+}
+.nav-border{
+    width:100%;
+    height:5px;
+    border-top-style:solid;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    margin-left:5%;
+}
+.header-text{
+    margin-top: 20px;
+    flex-basis: 60%;
+    flex-grow:1;
+}
+.header-text h1{
+    font-size: 60px;
+    text-decoration:underline;
+    text-decoration-color: #59ca73;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+.header-text p{
+    font-size: 18px;
+}
+.header-image{
+    padding-top: 10px;
+    flex-basis: 35%;
+}
+.header-image img{
+    width: 400px;
+}
+/* ------------------python------------- */
+.container{
+    padding: 20px 5% 10px 5%;
+}
+#python-section h1{
+    text-decoration: underline;
+    text-decoration-color: #59ca73;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+#python-section p{
+    font-size: 18px;
+    padding-top: 10px;
+}
+#python-section .images{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin: 30px 0;
+    gap: 10px 10px;
+    align-items: center;
+    align-content: center;
+}
+#python-section .img{
+    flex-basis:20%; 
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+#python-section .img img{
+    width:300px;
+}
+/* ---------------java------------ */
+#java-section .container{
+    padding: 60px 5% 10px 5%;
+}
+#java-section h1{
+    text-decoration: underline;
+    text-decoration-color: #59ca73;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.java-col-1{
+    flex-basis:60%;
+    flex-grow: 1;
+}
+.java-col-2{
+    flex-basis: 35%;
+}
+.java-col-2 img{
+    width:400px;
+}
+#java-section p{
+    font-size: 18px;
+    padding-top: 10px;
+}
+.images{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    margin: 30px 0;
+    gap: 10px 10px;
+    align-items: center;
+    align-content: center;
+}
+#java-section .img{
+    flex-basis:20%; 
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+#java-section .img img{
+    width:500px;
+}
+
+/* --------------c++---------------- */
+#cplus-section .container{
+    padding: 60px 5% 10px 5%;
+}
+#cplus-section h1{
+    text-decoration: underline;
+    text-decoration-color: #59ca73;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+#cplus-section p{
+    font-size: 18px;
+    padding-top: 10px;
+}
+/* ---------------------html-------------------- */
+#html-section .container{
+    padding: 60px 5% 10px 5%;
+}
+#html-section h1{
+    text-decoration: underline;
+    text-decoration-color: #59ca73;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+#html-section p{
+    font-size: 18px;
+    padding-top: 10px;
+}
+/* ---------------c#-------------- */
+#csharp-section .container{
+    padding: 60px 5% 10px 5%;
+}
+#csharp-section h1{
+    text-decoration: underline;
+    text-decoration-color: #59ca73;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+#csharp-section p{
+    font-size: 18px;
+    padding-top: 10px;
+}
+#csharp-section .images{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+    margin: 30px 0;
+    gap: 10px 50px;
+    align-items: center;
+    align-content: center;
+}
+#csharp-section .img{
+    flex-basis:20%; 
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+#csharp-section .img img{
+    width:300px;
+}
+/* ---------------contact-------------- */
+#contact{
+    padding: 40px 5% 10px 5%;
+    background: #59ca73;
+}
+#contact h2{
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+#contact .container{
+    padding:10px 0 20px 0;
+}
+#contact p{
+    padding:10px 0;
+    font-size:18px;
+}
+#contact i{
+    color:#ffffff;
+    margin-right:10px;
+}
+
+/* ----------small screen-------- */
+
+nav .fa-solid{
+    display:none;
+}
+@media only screen and (max-width: 600px){
+    nav .fa-solid{
+        display:block;
+        font-size:25px;
+        cursor:pointer;
+    }
+    nav ul{
+        background:#59ca73;
+        position: fixed;
+        top:0;
+        right:-200px;
+        width:200px;
+        height:100vh;
+        padding-top:50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul li a{
+        color:#fff;
+        text-decoration: underline;
+        text-decoration-color: rgb(0, 0, 0);
+        text-underline-offset: 10px;
+        text-decoration-thickness: 2px;
+    }
+    nav ul .fa-solid{
+        position:absolute;
+        top:25px;
+        left:25px;
+        cursor:pointer;
+    }
+}
